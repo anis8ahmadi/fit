@@ -4,7 +4,7 @@ clc;
 
 tx = tic;
 %% Open the files
-matrice=xlsread('C:\Users\anis8\Desktop\abc.xlsx');
+matrice=xlsread('.\abc.xlsx');
 
 %% Randomly dataset
 indice=1;
@@ -93,7 +93,7 @@ best40=tab378(1:40,:);
 toc(tx)
 disp('1st test is done')
 
-%% 2éme essai
+%% 2Ã©me essai
 tx = tic;
 for n=1:4
     tab780=zeros(780,2);
@@ -118,7 +118,7 @@ for n=1:4
     best40=sortrows(best40,'descend');
     ALL=[ALL;sortrows(best40(:,1),'ascend')];
     toc(tx)
-    disp(['2nd test N°',num2str(n),' is done'])
+    disp(['2nd test NÂ°',num2str(n),' is done'])
 end
 
 tx = tic;
